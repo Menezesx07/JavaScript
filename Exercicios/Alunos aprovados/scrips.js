@@ -1,0 +1,6 @@
+
+var alunos = [];
+
+function comparador () {
+    
+}

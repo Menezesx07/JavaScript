@@ -1,0 +1,49 @@
+body {
+   background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    background-color: orange;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    margin-left: 480px;
+    margin-top: 50px;
+    border-radius: 5%;
+}
+
+#input {
+    border-radius: 5%;
+    border: none;
+}
+
+.btn {
+    border-radius: 10%;
+    border: none;
+}
+
+.container2 {
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 20px;
+    width: 350px;
+    height: 300px;
+    border: none;
+    border-radius: 5%;
+}
+
+#nome {
+    color: white;
+}
+.container2 li {
+    margin-left: 25px;
+    color: black;
+}
+
+.tarefas {
+    margin-top: 30px;
+}
