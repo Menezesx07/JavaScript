@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #444;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fundo.png);
+    background-size: cover;
+}
+
+button > i {
+    color: blueviolet;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+button {
+    background-color: transparent;
+    border-style: none;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: blueviolet;
+    border-radius: 7px;
+}
+
+button:hover > i {
+    color: white;
+}
+
+
+input, select {
+    padding: 4px 8px;
+}
+
+.hide {
+      display: none;
+}
+
+/*Header*/
+
+.main-container{
+    background-color: white;
+    max-width: 450px;
+    margin: 50px auto; /*centralizando*/
+    padding: 24px;
+    border-radius: 15px;
+}
+
+.main-container header {
+    text-align: center;
+    padding: 0 16px 16px;
+    border-bottom: 4px solid blueviolet;
+}
+
+#todo-form, #edit-form{
+    padding: 16px;
+    border-bottom: 1px solid blueviolet;
+}
+
+#todo-form p, #edit-form p {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 4px;
+}
+
+#cancel-edit-btn {
+    margin-top: 10px;
+}
+
+/*tool bar*/
+
+#toolbar {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid blueviolet;
+}
+
+#toolbar h4 {
+    margin-bottom: 10px;
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid blueviolet;
+    padding-right: 16px;
+    margin-right: 16px;
+    width: 60%;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+}
+
+#filter {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
+
+/* todo list */
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid blueviolet;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 16px;
+}
+
+.todo button {
+    margin-left: 5px;
+}
+
+.done {
+    background-color: #444;
+}
+
+.done h3 {
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
